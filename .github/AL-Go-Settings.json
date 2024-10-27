@@ -1,4 +1,18 @@
 {
   "type": "PTE",
-  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main"
+  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main",
+  "gitHubRunner": "self-hosted",
+  "environments": [
+    "InternalDemo",
+    "Another_UAT"
+  ], 
+  "DeployToInternalDemo": {
+    "EnvironmentName": "Demo",
+    "continuousDeployment": true
+  },
+  "DeployToAnother_UAT": {
+    "EnvironmentName": "UAT",
+    "continuousDeployment": true
+  }
 }
+
